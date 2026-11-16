@@ -666,20 +666,6 @@ The doctor has handled more than 20,000 cases, providing his patients with custo
 <div class="elementor-element elementor-element-a9a6446 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-invisible elementor-widget elementor-widget-be-posts" data-element_type="widget" data-id="a9a6446" data-settings='{"_animation":"fadeIn"}' data-widget_type="be-posts.skin-grid-batura">
 <div class="elementor-widget-container">
 <div class="elementor-grid elementor-posts--skin-grid-batura">
-<article class="elementor-post post-19758 post type-post status-publish format-standard hentry category-awareness-program category-events entry" id="post-19758">
-<div class="elementor-post__content">
-<h3 class="elementor-post__title"><a href="/ibscon-2026-16th-annual-conference-of-the-indian-brachytherapy-society-cmc-vellore.php">IBSCON 2026 – 16th Annual Conference of the Indian Brachytherapy Society, CMC Vellore</a></h3>
-<ul class="elementor-post__meta">
-<li>
-<time class="entry-date published" datetime="2026-08-26T10:24:56+00:00">August 26, 2026</time> </li>
-<li>
-<a class="elementor-post__comment-count" href="ibscon-2026-16th-annual-conference-of-the-indian-brachytherapy-society-cmc-vellore.php#respond">
-
-  	              0 Comment  	            </a>
-</li>
-</ul>
-</div>
-</article>
 <article class="elementor-post post-19697 post type-post status-publish format-standard has-post-thumbnail hentry category-events entry" id="post-19697">
 <div class="elementor-post__thumbnail">
 <img alt="" class="attachment-medium size-medium wp-post-image" decoding="async" height="169" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg" srcset="/assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg 300w, /assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg 1024w, /assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg 768w, /assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg 1536w, /assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg 1568w, /assets/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-01-at-2.20.34-PM-2.jpeg 1600w" width="300"/> </div>
