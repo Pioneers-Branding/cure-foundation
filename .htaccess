@@ -6,9 +6,20 @@
 #   /about-us.php                       -> about-us.php
 #   /author__cureweb__page__2.php       -> author__cureweb__page__2.php
 #
-# This file only adds a friendly 404 page. The shared PHP library is blocked
+# This file adds a friendly 404 page and an HTTPS redirect. The shared PHP library is blocked
 # separately by includes/.htaccess.
 
 DirectoryIndex index.php
 
 ErrorDocument 404 /404.php
+
+# Force HTTPS so form data (comments, donations) is never sent in clear
+# text (DPDP Act security safeguard). Skipped behind a TLS-terminating
+# proxy that sets X-Forwarded-Proto, and on localhost.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

@@ -48,7 +48,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
     37 => '<script id="Popup.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/Popup.js"></script>',
     38 => '<script id="PopupConfig.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/PopupConfig.js"></script>',
     39 => '<script id="PopupBuilder.js-js-before">
-var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
+var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":true};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
 var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\\/admin-ajax.php","nonce":"c51796b91c"};
 </script>',
@@ -351,7 +351,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-836210a elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="836210a" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-<p>On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony. Dr. P. Vijay Anand Reddy Director and Dr Rajeev Reddy Ortho oncologist &amp; other top oncologists participated in the event and have highlighted the importance of early detection and advanced treatment in sarcoma care. Survivors shared emotional journeys, inspiring hope and awareness. Eminent doctors and dignitaries joined in celebrating these warriors as symbols of courage.</p> </div>
+<p>On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony. Dr. P. Vijay Anand Reddy Director and Dr Rajeev Reddy Ortho oncologist &amp; other oncologists participated in the event and have highlighted the importance of early detection and advanced treatment in sarcoma care. Survivors shared emotional journeys, inspiring hope and awareness. Doctors and dignitaries joined in celebrating these warriors as symbols of courage.</p> </div>
 </div>
 </div>
 </div>

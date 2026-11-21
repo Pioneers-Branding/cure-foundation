@@ -153,6 +153,11 @@ SGPBPopup.listeners = function () {
 	});
 
 	setInterval(function() {
+		/* DPDP: no open-counter pings to the server when analytics are disabled. */
+		if (typeof SGPB_POPUP_PARAMS !== 'undefined' && SGPB_POPUP_PARAMS.disableAnalyticsGeneral) {
+			window.sgpbOpenedPopup = {};
+			return false;
+		}
 		var openedPopups = window.sgpbOpenedPopup || {};
 		if (!Object.keys(openedPopups).length) {
 			return false;

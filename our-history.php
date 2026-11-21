@@ -48,7 +48,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
     37 => '<script id="Popup.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/Popup.js"></script>',
     38 => '<script id="PopupConfig.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/PopupConfig.js"></script>',
     39 => '<script id="PopupBuilder.js-js-before">
-var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
+var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":true};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
 var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\\/admin-ajax.php","nonce":"c51796b91c"};
 </script>',
@@ -423,7 +423,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 <div class="elementor-element elementor-element-d08cfb7 elementor-widget elementor-widget-testimonial" data-element_type="widget" data-id="d08cfb7" data-widget_type="testimonial.default">
 <div class="elementor-widget-container">
 <div class="elementor-testimonial-wrapper">
-<div class="elementor-testimonial-content">The two met when Dr. Vijay Anand Reddy earned a fellowship in New York Medical College in the 90s – when Dr. Chitti Moorthy was the more experienced professor and mentor. During this fellowship, they developed a deep bond from the ground-breaking research work that they achieved together. A bond resulting from mutual appreciation of superlative technical skills and an overlapping set of core values. </div>
+<div class="elementor-testimonial-content">The two met when Dr. Vijay Anand Reddy earned a fellowship in New York Medical College in the 90s – when Dr. Chitti Moorthy was the more experienced professor and mentor. During this fellowship, they developed a deep bond from the research work that they carried out together. A bond resulting from mutual respect and an overlapping set of core values. </div>
 </div>
 </div>
 </div>
@@ -479,7 +479,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-6172a13 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="6172a13" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-<p>CURE Foundation is a manifestation of their core values. The foundation has been thriving since its inception through extensive collaborative and progressive initiatives. The partnership between these world-renowned cancer specialists, enhanced by the support from their globally recognized institutes, became a powerful force of impact through exchange of knowledge and resources between India and the US.</p> </div>
+<p>CURE Foundation is a manifestation of their core values. The foundation has been thriving since its inception through extensive collaborative and progressive initiatives. The partnership between these cancer specialists, supported by their institutes, became a powerful force of impact through exchange of knowledge and resources between India and the US.</p> </div>
 </div>
 </div>
 </div>

@@ -48,7 +48,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
     37 => '<script id="Popup.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/Popup.js"></script>',
     38 => '<script id="PopupConfig.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/PopupConfig.js"></script>',
     39 => '<script id="PopupBuilder.js-js-before">
-var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
+var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":true};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
 var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\\/admin-ajax.php","nonce":"c51796b91c"};
 </script>',
@@ -363,7 +363,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 </div>
 <div class="elementor-element elementor-element-331c318 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="331c318" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-<p>Donations to the CURE Foundation are exempt from tax under Section 80G of the Income Tax Act, 1961. Please contribute to the Foundation and lay the path to world-class cancer care for those who need it the most. Together we can fight the war against cancer and win.</p> </div>
+<p>Donations to the CURE Foundation are exempt from tax under Section 80G of the Income Tax Act, 1961. Please contribute to the Foundation and help make quality cancer care accessible to those who need it the most. Together we can make a difference for people affected by cancer.</p> </div>
 </div>
 <section class="elementor-section elementor-inner-section elementor-element elementor-element-52f2d31 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="52f2d31">
 <div class="elementor-container elementor-column-gap-default">

@@ -48,7 +48,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
     37 => '<script id="Popup.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/Popup.js"></script>',
     38 => '<script id="PopupConfig.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/PopupConfig.js"></script>',
     39 => '<script id="PopupBuilder.js-js-before">
-var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
+var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":true};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
 var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\\/admin-ajax.php","nonce":"c51796b91c"};
 </script>',
@@ -372,7 +372,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 </section>
 <div class="elementor-element elementor-element-a7abb42 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="a7abb42" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-<p>CURE Foundation is a spirited initiative to create consciousness on cancer prevention, early detection, cure &amp; rehabilitation especially for the needful. In addition to spreading awareness for the benefit of the society, the Foundation has so far made available, quality cancer treatment, both free and subsidized, to more than 1700 needy patients, and engaged in numerous rehabilitation, research and education programs. CURE is a non-profit organization.</p> </div>
+<p>CURE Foundation is a spirited initiative to create consciousness on cancer prevention, early detection, treatment &amp; rehabilitation especially for the needful. In addition to spreading awareness for the benefit of the society, the Foundation has so far made available, quality cancer treatment, both free and subsidized, to more than 1700 needy patients, and engaged in numerous rehabilitation, research and education programs. CURE is a non-profit organization.</p> </div>
 </div>
 </div>
 </div>
@@ -479,7 +479,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 </div>
 </div>
 <div class="elementor-icon-box__content">
-<h3 class="elementor-icon-box__title"><a href="#">For Women</a></h3><div class="elementor-icon-box__desc">Easing their burden, empowering them and liberating them from cancer.
+<h3 class="elementor-icon-box__title"><a href="#">For Women</a></h3><div class="elementor-icon-box__desc">Easing their burden, empowering them and supporting them through cancer care.
 </div> </div>
 </div>
 </div>
@@ -532,7 +532,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 </div>
 </div>
 <div class="elementor-icon-box__content">
-<h3 class="elementor-icon-box__title"><a href="#">Cured</a></h3><div class="elementor-icon-box__desc">Providing support and rehabilitation facilities to the survivors.
+<h3 class="elementor-icon-box__title"><a href="#">Survivorship</a></h3><div class="elementor-icon-box__desc">Providing support and rehabilitation facilities to the survivors.
 </div> </div>
 </div>
 </div>
@@ -561,7 +561,7 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 </div>
 <div class="elementor-popup__white-popup mfp-hide" id="elementor-video-popup-skin-cholatse">
 <div class="elementor-popup__video elementor-popup__aspect-ratio-169">
-<iframe allowfullscreen="" class="elementor-video-iframe" src="https://www.youtube.com/embed/3ylkBG8hN_w?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=0&amp;mute=0&amp;rel=0&amp;modestbranding=0" title="youtube Video Player"></iframe> </div>
+<iframe allowfullscreen="" class="elementor-video-iframe" src="https://www.youtube-nocookie.com/embed/3ylkBG8hN_w?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=0&amp;mute=0&amp;rel=0&amp;modestbranding=0" title="youtube Video Player"></iframe> </div>
 </div>
 </div>
 </div>
@@ -576,9 +576,9 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 </div>
 <div class="elementor-element elementor-element-9df9af2 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="9df9af2" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<p class="elementor-heading-title elementor-size-default">Dr. Vijay Anand Reddy, who is presently the Director and Senior Consultant Oncologist at Apollo Cancer Hospital, Hyderabad, is unquestionably at the academic pinnacle of oncology in India and is an inspirational figure in medical circles. He is an astute clinician and healer with over two decades of experience that have made him a caring and enthusiastic cancer crusader – empowering his patients with love, hope, faith, courage, peace of mind, and the spirit to conquer cancer.
+<p class="elementor-heading-title elementor-size-default">Dr. Vijay Anand Reddy, who is presently the Director and Senior Consultant Oncologist at Apollo Cancer Hospital, Hyderabad, is an oncologist with over two decades of experience. He is committed to cancer awareness and patient support, encouraging his patients with hope, courage and peace of mind through their treatment.
 
-The doctor has handled more than 20,000 cases, providing his patients with customized evidence-based and experience-driven protocols that have led to his extraordinary success rate of more than 85%. Dr. Reddy has always been empathetic towards those less fortunate in society. He has founded CURE Foundation to increase awareness of cancer prevention, early detection, and rehabilitation, and to make quality cancer treatment more readily available, especially to the needy. 
+He follows evidence-based treatment protocols tailored to each patient. Dr. Reddy has always been empathetic towards those less fortunate in society. He has founded CURE Foundation to increase awareness of cancer prevention, early detection, and rehabilitation, and to make quality cancer treatment more readily available, especially to the needy. 
 
 </p> </div>
 </div>
@@ -715,7 +715,7 @@ The doctor has handled more than 20,000 cases, providing his patients with custo
 </div>
 <div class="elementor-element elementor-element-3526232 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="3526232" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-<p>Donations to the CURE Foundation are exempt from tax under Section 80G of the Income Tax Act, 1961. Please contribute to the Foundation and lay the path to world-class cancer care for those who need it the most. Together we can fight the war against cancer and win.</p> </div>
+<p>Donations to the CURE Foundation are exempt from tax under Section 80G of the Income Tax Act, 1961. Please contribute to the Foundation and help make quality cancer care accessible to those who need it the most. Together we can make a difference for people affected by cancer.</p> </div>
 </div>
 <section class="elementor-section elementor-inner-section elementor-element elementor-element-a90e6fc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="a90e6fc">
 <div class="elementor-container elementor-column-gap-default">
@@ -856,7 +856,7 @@ The doctor has handled more than 20,000 cases, providing his patients with custo
 </section>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-8eecf27 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="8eecf27" data-settings='{"animation":"none"}'>
 <div class="elementor-container elementor-column-gap-extended">
-<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e380260" data-element_type="column" data-id="e380260">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e380260" data-element_type="column" data-id="e380260">
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-77e4763 elementor-widget elementor-widget-be-counter" data-element_type="widget" data-id="77e4763" data-widget_type="be-counter.default">
 <div class="elementor-widget-container">
@@ -879,7 +879,7 @@ The doctor has handled more than 20,000 cases, providing his patients with custo
 </div>
 </div>
 </div>
-<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3cb0889" data-element_type="column" data-id="3cb0889">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3cb0889" data-element_type="column" data-id="3cb0889">
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-64a354e elementor-widget elementor-widget-be-counter" data-element_type="widget" data-id="64a354e" data-widget_type="be-counter.default">
 <div class="elementor-widget-container">
@@ -902,29 +902,7 @@ The doctor has handled more than 20,000 cases, providing his patients with custo
 </div>
 </div>
 </div>
-<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f3c5eb0" data-element_type="column" data-id="f3c5eb0">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-547f078 elementor-widget elementor-widget-be-counter" data-element_type="widget" data-id="547f078" data-widget_type="be-counter.default">
-<div class="elementor-widget-container">
-<div class="elementor-counter">
-<div class="elementor-counter__content">
-<div class="elementor-counter__number-wrap">
-<span class="elementor-counter__number" data-counter='{"easing":"linear","duration":2000,"toValue":1700,"rounding":0,"delimiter":","}'>
 
-						0					</span>
-<span class="elementor-counter__number-suffix">
-
-							+						</span>
-</div>
-<h3 class="elementor-counter__title">
-
-						HAPPY FACES					</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </section>
 </div>

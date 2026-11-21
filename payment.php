@@ -48,7 +48,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
     37 => '<script id="Popup.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/Popup.js"></script>',
     38 => '<script id="PopupConfig.js-js" src="/assets/wp-content/plugins/popup-builder/public/js/PopupConfig.js"></script>',
     39 => '<script id="PopupBuilder.js-js-before">
-var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
+var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"/assets/wp-content/plugins/popup-builder/public/img/theme_1/close.png","2":"/assets/wp-content/plugins/popup-builder/public/img/theme_2/close.png","3":"/assets/wp-content/plugins/popup-builder/public/img/theme_3/close.png","5":"/assets/wp-content/plugins/popup-builder/public/img/theme_5/close.png","6":"/assets/wp-content/plugins/popup-builder/public/img/theme_6/close.png"},"homePageUrl":"https:\\/\\/curefoundationindia.com\\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":true};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
 var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\\/admin-ajax.php","nonce":"c51796b91c"};
 </script>',
@@ -341,8 +341,36 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\\/\\/curefoundationindia.com\\/wp-admin\
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-775bff0 elementor-widget elementor-widget-html" data-element_type="widget" data-id="775bff0" data-widget_type="html.default">
 <div class="elementor-widget-container">
-<script src="https://zwvbivyf.formester.com/widget/standard.js" type="module"></script>
-<formester-standard-form height="1000rem" id="11a17e2a-948a-481b-96ad-bcb7c3eb4a50" set-auto-height="true" url="https://zwvbivyf.formester.com/f/11a17e2a-948a-481b-96ad-bcb7c3eb4a50"></formester-standard-form>
+<div class="cure-consent" id="cure-formester-gate">
+<p><strong>Privacy notice:</strong> The donation form below is provided by our form service, Formester. It collects the details you enter (such as your name, contact details and donation amount) only to process your donation and send you a receipt. See our <a href="/privacy-policy.php" rel="noopener" target="_blank">Privacy Policy</a> for how we use, store and delete your data and how to exercise your rights.</p>
+<label for="cure-formester-consent"><input aria-required="true" id="cure-formester-consent" name="cure_dpdp_consent" required="" type="checkbox" value="yes"/><span>I consent to Cure Foundation India collecting and using my personal data, including any health information I share, to process my donation and send me a receipt, as described in the <a href="/privacy-policy.php" rel="noopener" target="_blank">Privacy Policy</a>. I can withdraw this consent at any time. <span aria-hidden="true">*</span></span></label>
+<p><button class="elementor-button" id="cure-formester-open" type="button">Continue to the donation form</button></p>
+<p class="cure-consent-error" role="alert">Please tick the consent box to continue.</p>
+</div>
+<div id="cure-formester-slot"></div>
+<script>
+(function () {
+  var btn = document.getElementById('cure-formester-open');
+  var box = document.getElementById('cure-formester-consent');
+  var gate = document.getElementById('cure-formester-gate');
+  btn.addEventListener('click', function () {
+    if (!box.checked) { gate.classList.add('is-invalid'); box.focus(); return; }
+    gate.classList.remove('is-invalid');
+    box.disabled = true; btn.disabled = true; btn.textContent = 'Consent recorded';
+    /* The third-party form loads only after consent. */
+    var s = document.createElement('script');
+    s.type = 'module';
+    s.src = 'https://zwvbivyf.formester.com/widget/standard.js';
+    document.head.appendChild(s);
+    var f = document.createElement('formester-standard-form');
+    f.setAttribute('height', '1000rem');
+    f.setAttribute('id', '11a17e2a-948a-481b-96ad-bcb7c3eb4a50');
+    f.setAttribute('set-auto-height', 'true');
+    f.setAttribute('url', 'https://zwvbivyf.formester.com/f/11a17e2a-948a-481b-96ad-bcb7c3eb4a50');
+    document.getElementById('cure-formester-slot').appendChild(f);
+  });
+})();
+</script>
 </div>
 </div>
 </div>

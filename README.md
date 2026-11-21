@@ -67,6 +67,21 @@ adds `ErrorDocument 404 /404.php`; routing works without it.
   compute replay recorded tokens from `$CURE_MENU_OVERRIDES` in
   `includes/config.php` (keyed by the logical URL).
 
+## Compliance (DPDP Act 2023 / NMC)
+
+- `includes/footer.php` carries the legal links (Privacy Policy, Terms of
+  Use, Medical Disclaimer), the medical disclaimer and the AI-content
+  disclaimer on every page, plus the consent CSS/JS.
+- `cure_inject_consent()` in `includes/functions.php` adds a privacy notice
+  and an unticked, required consent checkbox to every POST form that
+  collects personal data (comment and Give donation forms).
+  `cure_require_consent()` rejects such POSTs without `cure_dpdp_consent=yes`
+  (HTTP 400).
+- `payment.php` loads the third-party Formester form only after consent.
+- `privacy-policy.php`, `terms-of-use.php`, `medical-disclaimer.php` are
+  hand-written pages; placeholders in `[BRACKETS]` must be filled in.
+- `.htaccess` redirects HTTP to HTTPS (skipped on localhost).
+
 ## Local development
 
 ```

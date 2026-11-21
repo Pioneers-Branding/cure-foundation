@@ -356,6 +356,94 @@ function cure_render_tail(array $page): void
     echo $CURE_END_HTML;
 }
 
+/** Field names that carry personal data in the site's POST forms. */
+const CURE_PERSONAL_FIELDS = array('author', 'email', 'url', 'comment', 'give_first', 'give_last', 'give_email');
+
+/**
+ * DPDP notice + required (unticked) consent checkbox for a form.
+ * $purpose completes "...to <purpose>" in the user's voice; $why is the
+ * same purpose addressed to the user, for the notice.
+ */
+function cure_consent_block(string $id, string $purpose, string $what, string $why): string
+{
+    return '<div class="cure-consent">'
+        . '<p><strong>Privacy notice:</strong> We collect ' . $what . ' only to ' . $why
+        . '. See our <a href="/privacy-policy.php" target="_blank" rel="noopener">Privacy Policy</a>'
+        . ' for how we use, store and delete your data and how to exercise your rights.</p>'
+        . '<label for="' . $id . '"><input id="' . $id . '" name="cure_dpdp_consent" type="checkbox" value="yes" required aria-required="true"/>'
+        . '<span>I consent to Cure Foundation India collecting and using my personal data, including any health information I share, to '
+        . $purpose . ', as described in the <a href="/privacy-policy.php" target="_blank" rel="noopener">Privacy Policy</a>.'
+        . ' I can withdraw this consent at any time. <span aria-hidden="true">*</span></span></label>'
+        . '<p class="cure-consent-error" role="alert">Please tick the consent box to continue.</p>'
+        . '</div>';
+}
+
+/**
+ * Add a privacy notice and consent checkbox to every POST form on the page
+ * that collects personal data (comment forms, Give donation forms).
+ */
+function cure_inject_consent(string $html): string
+{
+    static $n = 0;
+    return preg_replace_callback('~<form\b[^>]*\bmethod="post"[^>]*>.*?</form>~is', static function ($m) use (&$n) {
+        $form = $m[0];
+        if (strpos($form, 'cure_dpdp_consent') !== false) {
+            return $form;
+        }
+        $is_comment = strpos($form, 'id="commentform"') !== false;
+        $is_give    = strpos($form, 'name="give_email"') !== false;
+        if (!$is_comment && !$is_give) {
+            return $form;
+        }
+        $n++;
+        if ($is_comment) {
+            $block = cure_consent_block('cure-consent-' . $n,
+                'publish and moderate my comment and reply to me if needed',
+                'your name, email address, optional website and comment',
+                'publish and moderate your comment and reply to you if needed');
+            $anchor = '<p class="form-submit">';
+        } else {
+            $block = cure_consent_block('cure-consent-' . $n,
+                'process my donation and send me a receipt',
+                'your name, email address and donation details',
+                'process your donation and send you a receipt');
+            $anchor = '<div class="give-submit-button-wrap';
+        }
+        $pos = strpos($form, $anchor);
+        if ($pos === false) {
+            $pos = strrpos($form, '</form>');
+        }
+        return substr_replace($form, $block, $pos, 0);
+    }, $html);
+}
+
+/**
+ * Server-side consent check: a POST carrying personal data without the
+ * consent flag is rejected and nothing is processed.
+ */
+function cure_require_consent(): bool
+{
+    if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') {
+        return true;
+    }
+    $has_personal = false;
+    foreach (CURE_PERSONAL_FIELDS as $f) {
+        if (isset($_POST[$f]) && trim((string) $_POST[$f]) !== '') {
+            $has_personal = true;
+            break;
+        }
+    }
+    if (!$has_personal || (($_POST['cure_dpdp_consent'] ?? '') === 'yes')) {
+        return true;
+    }
+    http_response_code(400);
+    header('Content-Type: text/html; charset=utf-8');
+    echo '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Consent required</title></head><body>'
+        . '<p>Your details were not submitted because consent was not given. Please go back, tick the consent box and try again.'
+        . ' See our <a href="/privacy-policy.php">Privacy Policy</a>.</p></body></html>';
+    return false;
+}
+
 /**
  * Render one full page: head, header/nav, content, footer, tail.
  */
@@ -365,6 +453,13 @@ function cure_render_page(array $page): void
     if (isset($_GET['ical']) || isset($_GET['outlook-ical'])) {
         cure_204();
         return;
+    }
+
+    if (!cure_require_consent()) {
+        return;
+    }
+    if (isset($page['content'])) {
+        $page['content'] = cure_inject_consent($page['content']);
     }
 
     cure_render_head($page);
